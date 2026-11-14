@@ -5,8 +5,6 @@ import '../models/abrigo.dart';
 import '../theme/app_theme.dart';
 import 'abrigo_detalhe_screen.dart';
 
-/// Tela 6: abrigos com filtros (FilterChip) e favoritos.
-/// Estado: cada filtro e cada favorito chama setState() e a lista é refeita.
 class AbrigosScreen extends StatefulWidget {
   const AbrigosScreen({super.key, this.somenteComVagaInicial = false});
 
@@ -37,7 +35,6 @@ class _AbrigosScreenState extends State<AbrigosScreen> {
       return true;
     }).toList();
 
-    // Favoritos primeiro, depois o mais perto.
     lista.sort((a, b) {
       final favA = MockData.favoritos.contains(a.id) ? 0 : 1;
       final favB = MockData.favoritos.contains(b.id) ? 0 : 1;

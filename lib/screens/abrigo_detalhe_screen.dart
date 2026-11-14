@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../models/abrigo.dart';
 import '../theme/app_theme.dart';
 
-/// Tela 7: detalhe do abrigo. Recebe o Abrigo como parâmetro.
 class AbrigoDetalheScreen extends StatelessWidget {
   const AbrigoDetalheScreen({super.key, required this.abrigo});
 
