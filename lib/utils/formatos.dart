@@ -1,0 +1,5 @@
+String _doisDigitos(int n) => n.toString().padLeft(2, '0');
+
+/// Ex.: 14/11 às 03:07
+String formatarDataHora(DateTime d) =>
+    '${_doisDigitos(d.day)}/${_doisDigitos(d.month)} às ${_doisDigitos(d.hour)}:${_doisDigitos(d.minute)}';
