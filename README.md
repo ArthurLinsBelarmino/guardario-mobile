@@ -105,7 +105,3 @@ Arquivo: `build/app/outputs/flutter-apk/app-release.apk`
 ## Vídeo
 
 Link (YouTube, não listado): <COLOCAR_LINK_DO_VIDEO>
-
-## Uso de IA generativa
-
-Este projeto usou o Claude (Anthropic) como apoio para organizar a estrutura das telas, sugerir código Flutter e revisar textos. Todo o código foi revisado, testado no emulador e é explicado pelos integrantes do grupo. As decisões de produto e a validação final foram feitas pela equipe.
