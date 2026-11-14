@@ -6,7 +6,6 @@ import '../utils/formatos.dart';
 import '../widgets/nivel_chip.dart';
 import 'abrigos_screen.dart';
 
-/// Tela 5: detalhe do alerta. Recebe o Alerta como parâmetro.
 class AlertaDetalheScreen extends StatelessWidget {
   const AlertaDetalheScreen({super.key, required this.alerta});
 

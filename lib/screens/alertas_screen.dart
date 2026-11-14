@@ -6,7 +6,6 @@ import '../theme/app_theme.dart';
 import '../utils/formatos.dart';
 import 'alerta_detalhe_screen.dart';
 
-/// Tela 4: lista de alertas (ListView) com cards coloridos por nível.
 class AlertasScreen extends StatelessWidget {
   const AlertasScreen({super.key});
 
