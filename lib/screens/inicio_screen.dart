@@ -12,8 +12,6 @@ import 'login_screen.dart';
 import 'meus_relatos_screen.dart';
 import 'novo_relato_screen.dart';
 
-/// Tela 3: nível do rio, alerta ativo e atalhos.
-/// Estado: "Simular subida" altera o nível e a tela muda de cor via setState().
 class InicioScreen extends StatefulWidget {
   const InicioScreen({super.key, required this.logado, required this.onIrPara});
 
@@ -54,14 +52,16 @@ class _InicioScreenState extends State<InicioScreen> {
   }
 
   Future<void> _novoRelato() async {
+    final navigator = Navigator.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+
     if (!widget.logado) {
-      ScaffoldMessenger.of(context).showSnackBar(
+      messenger.showSnackBar(
         SnackBar(
           content: const Text('Entre na sua conta para enviar um relato.'),
           action: SnackBarAction(
             label: 'Entrar',
-            onPressed: () => Navigator.push(
-              context,
+            onPressed: () => navigator.push(
               MaterialPageRoute(builder: (_) => const LoginScreen()),
             ),
           ),
@@ -71,22 +71,20 @@ class _InicioScreenState extends State<InicioScreen> {
     }
 
     // Parâmetro de volta: o formulário devolve o Relato com Navigator.pop.
-    final relato = await Navigator.push<Relato>(
-      context,
+    final relato = await navigator.push<Relato>(
       MaterialPageRoute(builder: (_) => const NovoRelatoScreen()),
     );
     if (relato == null || !mounted) return;
 
     setState(() => MockData.relatos.insert(0, relato));
-    ScaffoldMessenger.of(context).showSnackBar(
+    messenger.showSnackBar(
       SnackBar(
         backgroundColor: Colors.green,
         content: Text('Relato enviado! Prioridade ${relato.prioridade} de 5.'),
         action: SnackBarAction(
           label: 'Ver',
           textColor: Colors.white,
-          onPressed: () => Navigator.push(
-            context,
+          onPressed: () => navigator.push(
             MaterialPageRoute(builder: (_) => const MeusRelatosScreen()),
           ),
         ),
