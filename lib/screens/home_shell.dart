@@ -5,11 +5,9 @@ import 'alertas_screen.dart';
 import 'inicio_screen.dart';
 import 'perfil_screen.dart';
 
-/// Estrutura principal com BottomNavigationBar (Início, Alertas, Abrigos, Perfil).
 class HomeShell extends StatefulWidget {
   const HomeShell({super.key, this.usuarioNome});
 
-  /// null = visitante (entrou sem conta).
   final String? usuarioNome;
 
   @override

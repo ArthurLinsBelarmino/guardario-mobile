@@ -4,7 +4,6 @@ import '../data/mock_data.dart';
 import '../theme/app_theme.dart';
 import 'home_shell.dart';
 
-/// Tela 2: login com Form + GlobalKey e validação.
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -30,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
     if (email.isEmpty) return 'Informe o e-mail.';
     final formato = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
     if (!formato.hasMatch(email)) return 'E-mail inválido.';
-    return null; // null = campo válido
+    return null; 
   }
 
   String? _validarSenha(String? valor) {

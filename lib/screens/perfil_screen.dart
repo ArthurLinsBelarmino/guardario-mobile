@@ -7,7 +7,6 @@ import 'kit_emergencia_screen.dart';
 import 'login_screen.dart';
 import 'meus_relatos_screen.dart';
 
-/// Aba Perfil: dados do usuário e atalhos para Meus relatos e Kit.
 class PerfilScreen extends StatelessWidget {
   const PerfilScreen({super.key, this.usuarioNome});
 

@@ -4,7 +4,6 @@ import '../theme/app_theme.dart';
 import 'home_shell.dart';
 import 'login_screen.dart';
 
-/// Tela 1: boas-vindas.
 class BoasVindasScreen extends StatelessWidget {
   const BoasVindasScreen({super.key});
 
