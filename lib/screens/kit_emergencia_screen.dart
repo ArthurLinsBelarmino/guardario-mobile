@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import '../data/mock_data.dart';
 import '../theme/app_theme.dart';
 
-/// Tela 10: kit de emergência. Cada CheckboxListTile chama setState()
-/// e o contador "Itens prontos: X de 12" é atualizado na hora.
 class KitEmergenciaScreen extends StatefulWidget {
   const KitEmergenciaScreen({super.key});
 
