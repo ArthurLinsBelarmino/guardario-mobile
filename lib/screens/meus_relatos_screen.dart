@@ -6,8 +6,6 @@ import '../theme/app_theme.dart';
 import '../utils/formatos.dart';
 import 'novo_relato_screen.dart';
 
-/// Tela 9: meus relatos. Recebe o relato de volta do formulário e
-/// atualiza a lista com setState().
 class MeusRelatosScreen extends StatefulWidget {
   const MeusRelatosScreen({super.key});
 
