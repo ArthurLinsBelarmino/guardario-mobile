@@ -33,6 +33,5 @@ class Relato {
   final DateTime criadoEm;
   final String status;
 
-  /// RN06: peso do tipo, +1 se a área estiver em ALERTA ou EMERGÊNCIA (teto 5).
   int get prioridade => min(5, tipo.pesoBase + (areaEmAlerta ? 1 : 0));
 }

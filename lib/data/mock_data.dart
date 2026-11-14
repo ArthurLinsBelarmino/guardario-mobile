@@ -3,15 +3,12 @@ import '../models/alerta.dart';
 import '../models/nivel_risco.dart';
 import '../models/relato.dart';
 
-/// Dados mockados do app (a entrega de Mobile não exige backend).
-/// As telas leem e alteram estes dados e chamam setState() para redesenhar.
+
 class MockData {
-  // Usuário de teste
   static const String usuarioNome = 'Cida Souza';
   static const String usuarioEmail = 'cida@guardario.com';
   static const String usuarioSenha = '123456';
 
-  // Estação que monitora o bairro
   static const String area = 'Jardim Pantanal';
   static const String estacaoNome = 'Estação Ponte Jardim Pantanal';
   static const String rio = 'Rio Tietê';
@@ -77,8 +74,6 @@ class MockData {
     return null;
   }
 
-  /// Simula uma nova leitura da estação: o rio sobe 40 cm e a chuva aumenta.
-  /// Devolve o alerta criado (se a leitura gerou um) ou null.
   static Alerta? simularSubida() {
     if (nivelAtualCm >= _nivelMaximoSimulacao) return null;
     nivelAtualCm += 40;
@@ -86,7 +81,6 @@ class MockData {
     return _verificarAlerta();
   }
 
-  /// Volta a simulação ao início (o rio baixou).
   static void reiniciarSimulacao() {
     nivelAtualCm = _nivelInicial;
     chuvaMmH = _chuvaInicial;
@@ -97,8 +91,6 @@ class MockData {
 
   static bool get simulacaoNoMaximo => nivelAtualCm >= _nivelMaximoSimulacao;
 
-  /// RN02: risco >= ALERTA abre alerta automático se não houver um ativo de
-  /// nível igual ou maior; alertas ativos de nível menor são substituídos.
   static Alerta? _verificarAlerta() {
     final risco = riscoAtual;
     if (risco.index < NivelRisco.alerta.index) return null;
@@ -183,7 +175,6 @@ class MockData {
     ),
   ];
 
-  /// Ids dos abrigos favoritados pelo usuário.
   static final Set<int> favoritos = {};
 
   static final List<Relato> relatos = [

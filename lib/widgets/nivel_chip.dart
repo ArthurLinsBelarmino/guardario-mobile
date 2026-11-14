@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../models/nivel_risco.dart';
 
-/// Selo colorido com o nível de risco (usado em várias telas).
 class NivelChip extends StatelessWidget {
   const NivelChip({super.key, required this.nivel});
 

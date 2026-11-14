@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Régua de risco do GuardaRio (a mesma da estação IoT, da API Java e do PL/SQL).
 enum NivelRisco {
   normal('NORMAL', Color(0xFF2E7D32), Icons.check_circle),
   atencao('ATENÇÃO', Color(0xFFF9A825), Icons.info),
@@ -13,7 +12,6 @@ enum NivelRisco {
   final Color cor;
   final IconData icone;
 
-  /// RN01: compara o nível com as cotas; chuva >= 50 mm/h sobe um nível.
   static NivelRisco calcular({
     required int nivelCm,
     required double chuvaMmH,

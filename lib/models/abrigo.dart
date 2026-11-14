@@ -23,7 +23,6 @@ class Abrigo {
 
   int get vagas => capacidade - ocupacao < 0 ? 0 : capacidade - ocupacao;
 
-  /// RN05: chegou na capacidade, fica LOTADO.
   bool get lotado => ocupacao >= capacidade;
 
   double get percentualOcupado => capacidade == 0 ? 1 : ocupacao / capacidade;

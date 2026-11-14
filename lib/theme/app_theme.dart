@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-/// Espaçamentos padrão do app (8 / 16 / 24).
 class Espaco {
   static const double p = 8;
   static const double m = 16;
   static const double g = 24;
 }
 
-/// Identidade visual única: azul GuardaRio, cards com raio 12.
 class AppTheme {
   static const Color azul = Color(0xFF1F7AB8);
   static const Color fundo = Color(0xFFF4F7FA);
