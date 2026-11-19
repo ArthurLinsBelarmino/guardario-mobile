@@ -104,4 +104,4 @@ Arquivo: `build/app/outputs/flutter-apk/app-release.apk`
 
 ## Vídeo
 
-Link (YouTube, não listado): <COLOCAR_LINK_DO_VIDEO>
+Link (YouTube, não listado): (https://youtu.be/czTgnMFlwKk)
