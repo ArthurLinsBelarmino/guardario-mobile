@@ -1,4 +1,4 @@
-# GuardaRio · App do Cidadão (Flutter)
+﻿# GuardaRio · App do Cidadão (Flutter)
 
 > Global Solution 2026/2 · CitizenTech · Mobile Application Development
 
