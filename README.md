@@ -1,4 +1,4 @@
-﻿# GuardaRio · App do Cidadão (Flutter)
+# GuardaRio · App do Cidadão (Flutter)
 
 > Global Solution 2026/2 · CitizenTech · Mobile Application Development
 
@@ -74,7 +74,7 @@ assets/logo.png
 Pré-requisitos: Flutter 3.27 ou superior e um emulador Android (ou celular com depuração USB).
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/ArthurLinsBelarmino/guardario-mobile.git
 cd guardario-mobile
 flutter pub get
 flutter run
@@ -105,3 +105,7 @@ Arquivo: `build/app/outputs/flutter-apk/app-release.apk`
 ## Vídeo
 
 Link (YouTube, não listado): (https://youtu.be/czTgnMFlwKk)
+
+## Uso de IA generativa
+
+Este projeto usou o Claude (Anthropic) como apoio para organizar a estrutura das telas, sugerir código Flutter e revisar textos. Todo o código foi revisado, testado no emulador e é explicado pelos integrantes do grupo. As decisões de produto e a validação final foram feitas pela equipe.
